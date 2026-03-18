@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-debouncer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Buffers payloads and releases them as a single block",
   "license": "MIT",
   "homepage": "",
