@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/du-cki/n8n-nodes-debouncer.git"
+    "url": "git+https://github.com/du-cki/n8n-nodes-debouncer.git"
   },
   "scripts": {
     "build": "n8n-node build",
@@ -25,7 +25,7 @@
     "lint:fix": "n8n-node lint --fix",
     "release": "n8n-node release",
     "prepublishOnly": "node -e \"process.exit(process.env.CI ? 0 : 1)\" || n8n-node prerelease",
-    "publish": "GITHUB_TOKEN=$(gh auth token) npm run release"
+    "tag-publish": "GITHUB_TOKEN=$(gh auth token) npm run release"
   },
   "files": [
     "dist"
