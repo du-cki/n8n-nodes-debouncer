@@ -16,7 +16,7 @@ export class Debounce implements INodeType {
     },
     group: ['transform'],
     version: 1,
-    description: 'Buffers payloads and releases them as a single block',
+    description: 'Delays and batches incoming items',
     defaults: {
       name: 'Debounce',
     },
@@ -30,14 +30,14 @@ export class Debounce implements INodeType {
         type: 'string',
         default: '',
         description:
-          'The unique key to group incoming items by (e.g., User ID, IP address, Webhook ID)',
+          'The unique key to group incoming items (e.g., User ID, IP address, Webhook ID)',
       },
       {
-        displayName: 'Payload to Buffer',
+        displayName: 'Payload',
         name: 'payload',
         type: 'string',
         default: '',
-        description: 'The actual data you want to collect and bundle together',
+        description: 'The data to collect and bundle',
       },
       {
         // eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
